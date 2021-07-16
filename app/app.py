@@ -1,6 +1,6 @@
 import os
 from time import localtime, strftime
-from flask import Flask, app, render_template, redirect ,url_for, flash
+from flask import Flask, render_template, redirect ,url_for, flash
 from passlib.hash import pbkdf2_sha256
 from flask_login import LoginManager, login_manager, login_user, current_user, logout_user, login_required
 from flask_socketio import SocketIO, join_room, leave_room, rooms, send, emit
